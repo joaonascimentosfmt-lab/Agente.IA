@@ -673,30 +673,19 @@ states.jur_certidoes = makeJurState('Certidões', 'Certidão de registro de pess
 states.jur_busca = makeJurState('Busca', 'Busca de registro de pessoa jurídica.\n\nInforme o nome ou CNPJ da entidade.');
 
 states.titulos = {
-  t: `<b>REGISTRO DE TÍTULOS E DOCUMENTOS</b>
+  t: `<b>📋 Registro de Títulos e Documentos</b>
 
-⚠️ <b>Atenção:</b> Em Várzea Grande, o serviço de <b>Registro de Imóveis</b> (compra, venda, matrícula, hipoteca de imóveis) é de responsabilidade do <b>1º Ofício de Várzea Grande</b>.
+⚠️ <b>Importante:</b> Em Várzea Grande, o serviço de <b>Registro de Imóveis</b> (compra e venda, matrícula, hipoteca, averbações, usucapião) é de responsabilidade exclusiva do:
+
+<b>🏛 1º Ofício de Várzea Grande</b>
+👤 <b>Titular:</b> Antônia de Campos Maciel
 
 📍 <b>Endereço:</b> Travessa Aquidaban, 38 - Centro, Várzea Grande - MT
 📞 <b>Telefone:</b> (65) 3682-6660 / 3682-6661
-🕐 <b>Horário:</b> Segunda a Sexta, 09h às 17h
-
-Abaixo, os serviços de <b>Títulos e Documentos</b> deste cartório:
-
-Escolha:`,
+📧 <b>E-mail:</b> primeirooficio.vg@terra.com.br
+🕐 <b>Horário:</b> Segunda a Sexta, 09h às 17h`,
   o: [
-    ['Registro de Contratos', 'tit_contratos'],
-    ['Notificação Extrajudicial', 'tit_notificacao'],
-    ['Alienação Fiduciária', 'tit_alienacao'],
-    ['Locação', 'tit_locacao'],
-    ['Comodato', 'tit_comodato'],
-    ['Compra e Venda', 'tit_compra_venda'],
-    ['Penhor', 'tit_penhor'],
-    ['Instrumento Particular', 'tit_instrumento'],
-    ['Certidões', 'tit_certidoes'],
-    ['Busca', 'tit_busca'],
-    ['Cancelamento', 'tit_cancelamento'],
-    ['🔙 Voltar', '__back__'],
+    ['🔙 Voltar ao Menu Principal', '__back__'],
   ]
 };
 
