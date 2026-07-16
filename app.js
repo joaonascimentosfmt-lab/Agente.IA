@@ -41,6 +41,7 @@ Escolha o serviço desejado:`,
     ['📝 Alteração de Nome', 'civil_alteracao_nome'],
     ['🌍 Traslado de Registro', 'civil_traslado'],
     ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -55,6 +56,7 @@ Deseja saber:`,
     ['❓ Perguntas Frequentes', 'civil_nascimento_faq'],
     ['👨‍💼 Falar com Atendente', 'atendente'],
     ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -65,7 +67,7 @@ states.civil_nascimento_docs = {
 • Documento dos pais (RG e CPF)
 • Certidão de Casamento (quando houver)
 • Comprovante de endereço`,
-  o: [['🔙 Voltar ao menu', 'civil_nascimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_nascimento_prazo = {
@@ -74,7 +76,7 @@ states.civil_nascimento_prazo = {
 O prazo legal para registro é de até 15 dias para o nascimento ocorrido em hospital e até 60 dias para o ocorrido fora de hospital.
 
 O registro pode ser feito a qualquer tempo, independentemente da idade.`,
-  o: [['🔙 Voltar', 'civil_nascimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_nascimento_custas = {
@@ -100,7 +102,7 @@ A mãe pode registrar e posteriormente solicitar investigação de paternidade.
 
 <b>4. Preciso levar testemunhas?</b>
 Não, não é necessário levar testemunhas para registro de nascimento.`,
-  o: [['🔙 Voltar', 'civil_nascimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento = {
@@ -115,6 +117,7 @@ Escolha:`,
     ['Inteiro Teor', 'civil_casamento_inteiro_teor'],
     ['Averbações', 'civil_casamento_averbacoes'],
     ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -127,7 +130,8 @@ Deseja saber:`,
     ['⏳ Prazo', 'civil_casamento_habilitacao_prazo'],
     ['💲 Custas', 'civil_casamento_habilitacao_custas'],
     ['📅 Agendar Atendimento', 'agendar'],
-    ['🔙 Voltar', 'civil_casamento'],
+    ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -140,7 +144,7 @@ states.civil_casamento_habilitacao_docs = {
 • Testemunhas (2 para cada lado)
 • Certidão de Casamento com averbação (se divorciado)
 • Certidão de Óbito do cônjuge (se viúvo)`,
-  o: [['🔙 Voltar', 'civil_casamento_habilitacao']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_habilitacao_prazo = {
@@ -149,14 +153,14 @@ states.civil_casamento_habilitacao_prazo = {
 O processo de habilitação leva em média 15 a 30 dias úteis, contados da publicação dos editais.
 
 O casamento deve ser realizado em até 90 dias após a habilitação.`,
-  o: [['🔙 Voltar', 'civil_casamento_habilitacao']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_habilitacao_custas = {
   t: `<b>💲 Custas - Habilitação de Casamento</b>
 
 Os valores variam conforme a tabela de emolumentos do estado de Mato Grosso. Consulte a opção "Custas e Emolumentos" no menu principal para valores atualizados.`,
-  o: [['🔙 Voltar', 'civil_casamento_habilitacao']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_civil = {
@@ -168,7 +172,7 @@ Documentos necessários:
 • Habilitação de casamento já concluída
 • RG e CPF dos noivos
 • 2 testemunhas por lado`,
-  o: [['📅 Agendar Atendimento', 'agendar'], ['🔙 Voltar', 'civil_casamento']]
+  o: [['📅 Agendar Atendimento', 'agendar'], ['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_conversao = {
@@ -180,7 +184,7 @@ Documentos necessários:
 • Escritura de União Estável ou sentença judicial
 • RG e CPF dos conviventes
 • Certidão de Casamento com averbação (se divorciado)`,
-  o: [['📅 Agendar Atendimento', 'agendar'], ['🔙 Voltar', 'civil_casamento']]
+  o: [['📅 Agendar Atendimento', 'agendar'], ['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_segunda_via = {
@@ -193,7 +197,8 @@ Escolha o tipo:`,
     ['Óbito', 'civil_segunda_via_obito'],
     ['Inteiro Teor', 'civil_segunda_via_inteiro_teor'],
     ['Digital', 'civil_segunda_via_digital'],
-    ['🔙 Voltar', 'civil_casamento'],
+    ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -203,7 +208,7 @@ states.civil_casamento_inteiro_teor = {
 A certidão em inteiro teor reproduz integralmente o conteúdo do registro, incluindo todas as averbações.
 
 Prazo: 5 a 10 dias úteis.`,
-  o: [['🔙 Voltar', 'civil_casamento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_casamento_averbacoes = {
@@ -214,7 +219,7 @@ Averbações comuns em casamento:
 • Divórcio
 • Alteração de nome
 • Óbito de um dos cônjuges`,
-  o: [['🔙 Voltar', 'civil_casamento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_obito = {
@@ -227,6 +232,7 @@ Deseja saber:`,
     ['💲 Custas', 'civil_obito_custas'],
     ['👨‍💼 Falar com Atendente', 'atendente'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -238,7 +244,7 @@ states.civil_obito_docs = {
 • Certidão de Casamento do falecido
 • RG e CPF do declarante
 • Comprovante de residência`,
-  o: [['🔙 Voltar', 'civil_obito']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_obito_prazo = {
@@ -247,7 +253,7 @@ states.civil_obito_prazo = {
 O registro deve ser feito em até 24 horas do óbito.
 
 Em caso de morte natural em hospital, o próprio hospital fornece a Declaração de Óbito.`,
-  o: [['🔙 Voltar', 'civil_obito']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_obito_custas = {
@@ -256,7 +262,7 @@ states.civil_obito_custas = {
 O registro de óbito é <b>gratuito</b> para pessoas reconhecidamente pobres, conforme Lei 6.015/73.
 
 Para os demais, consulte a tabela de emolumentos.`,
-  o: [['🔙 Voltar', 'civil_obito']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_segunda_via = {
@@ -270,6 +276,7 @@ Escolha o tipo:`,
     ['Inteiro Teor', 'civil_segunda_via_inteiro_teor'],
     ['Digital', 'civil_segunda_via_digital'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -283,7 +290,7 @@ Para solicitar a segunda via da certidão de nascimento, informe:
 • Local do registro
 
 Prazo: 3 a 5 dias úteis`,
-  o: [['🔙 Voltar', 'civil_segunda_via']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_segunda_via_casamento = {
@@ -295,7 +302,7 @@ Para solicitar a segunda via da certidão de casamento, informe:
 • Livro e folha (se disponível)
 
 Prazo: 3 a 5 dias úteis`,
-  o: [['🔙 Voltar', 'civil_segunda_via']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_segunda_via_obito = {
@@ -307,7 +314,7 @@ Para solicitar a segunda via da certidão de óbito, informe:
 • Nome dos pais do falecido
 
 Prazo: 3 a 5 dias úteis`,
-  o: [['🔙 Voltar', 'civil_segunda_via']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_segunda_via_inteiro_teor = {
@@ -316,7 +323,7 @@ states.civil_segunda_via_inteiro_teor = {
 Reprodução completa do registro, com todas as averbações.
 
 Prazo: 5 a 10 dias úteis.`,
-  o: [['🔙 Voltar', 'civil_segunda_via']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_segunda_via_digital = {
@@ -325,7 +332,7 @@ states.civil_segunda_via_digital = {
 Certidão eletrônica com validade jurídica, pode ser solicitada online.
 
 Prazo: 1 a 2 dias úteis.`,
-  o: [['🔙 Voltar', 'civil_segunda_via']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_inteiro_teor = {
@@ -336,7 +343,7 @@ A certidão em inteiro teor reproduz integralmente o conteúdo do assento de reg
 Prazo: 5 a 10 dias úteis.
 
 Valor: Consulte a tabela de emolumentos.`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_averbacoes = {
@@ -349,7 +356,7 @@ Averbações em registro civil:
 • Reconhecimento de filho
 • Alteração de nome
 • Óbito`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_paternidade = {
@@ -361,7 +368,7 @@ O reconhecimento de paternidade pode ser feito:
 • Por decisão judicial
 
 Documentos: RG, CPF, Certidão de Nascimento do filho`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_alteracao_nome = {
@@ -374,7 +381,7 @@ Possibilidades de alteração:
 • Alteração para maiores de 18 anos (Lei 14.382/2022)
 
 Consulte um atendente para verificar seu caso.`,
-  o: [['👨‍💼 Falar com Atendente', 'atendente'], ['🔙 Voltar', '__back__']]
+  o: [['👨‍💼 Falar com Atendente', 'atendente'], ['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.civil_traslado = {
@@ -386,7 +393,7 @@ Documentos:
 • Certidão estrangeira (traduzida por tradutor juramentado)
 • Documentos pessoais
 • Comprovante de residência`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas = {
@@ -403,6 +410,7 @@ Escolha:`,
     ['🌍 Apostilamento de Haia', 'notas_apostilamento'],
     ['📂 Certidões', 'notas_certidoes'],
     ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -428,6 +436,7 @@ Escolha:`,
     ['Emancipação', 'notas_escrituras_emancipacao'],
     ['Outras Escrituras', 'notas_escrituras_outras'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -444,6 +453,7 @@ ${info}`,
       ['📅 Agendar Atendimento', 'agendar'],
       ['👨‍💼 Falar com Atendente', 'atendente'],
       ['🔙 Voltar', '__back__'],
+      ['🏠 Menu Principal', 'main'],
     ]
   };
 }
@@ -479,11 +489,12 @@ Escolha:`,
     ['Revogação', 'notas_procuracao_revogacao'],
     ['Substabelecimento', 'notas_procuracao_sub'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
 function makeProcState(title, info) {
-  return { t: `<b>📄 ${title}</b>\n\n${info}`, o: [['🔙 Voltar', '__back__']] };
+  return { t: `<b>📄 ${title}</b>\n\n${info}`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 }
 
 states.notas_procuracao_pf = makeProcState('Procuração - Pessoa Física', 'Instrumento público que autoriza outra pessoa a agir em seu nome.\n\nDocumentos: RG, CPF.');
@@ -506,6 +517,7 @@ Escolha:`,
     ['Atualizar Assinatura', 'notas_reconhecimento_atualizar'],
     ['Consultar Firma', 'notas_reconhecimento_consultar'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -515,7 +527,7 @@ states.notas_reconhecimento_semelhanca = {
 Comparação da assinatura do documento com a firma existente no cartório.
 
 Documentos: RG, CPF, documento com assinatura.`,
-  o: [['🔙 Voltar', 'notas_reconhecimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas_reconhecimento_autenticidade = {
@@ -524,7 +536,7 @@ states.notas_reconhecimento_autenticidade = {
 O reconhecimento por autenticidade exige que o interessado assine na presença do tabelião ou preposto.
 
 Documentos: RG, CPF, documento original.`,
-  o: [['🔙 Voltar', 'notas_reconhecimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas_reconhecimento_abrir = {
@@ -535,7 +547,7 @@ Para abrir firma (registro de assinatura) no cartório.
 Documentos: RG, CPF, comprovante de residência.
 
 O titular deve comparecer pessoalmente.`,
-  o: [['🔙 Voltar', 'notas_reconhecimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas_reconhecimento_atualizar = {
@@ -546,14 +558,14 @@ Atualização do padrão de assinatura no cartório.
 Documentos: RG, CPF.
 
 O titular deve comparecer pessoalmente.`,
-  o: [['🔙 Voltar', 'notas_reconhecimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas_reconhecimento_consultar = {
   t: `<b>✍ Consultar Firma</b>
 
 Verificar se determinada firma consta no cartório e quais os signatários autorizados.`,
-  o: [['🔙 Voltar', 'notas_reconhecimento']]
+  o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.notas_autenticacao = {
@@ -566,13 +578,14 @@ Escolha:`,
     ['Documento Digital', 'notas_autenticacao_digital'],
     ['Autenticação Eletrônica', 'notas_autenticacao_eletronica'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
-states.notas_autenticacao_doc = { t: `<b>📑 Autenticação de Documento</b>\n\nConfere fé pública a documento particular.\n\nApresentar original e cópia.`, o: [['🔙 Voltar', 'notas_autenticacao']] };
-states.notas_autenticacao_copia = { t: `<b>📑 Cópia Autenticada</b>\n\nConfere que a cópia é fiel ao original.\n\nApresentar original e cópia.`, o: [['🔙 Voltar', 'notas_autenticacao']] };
-states.notas_autenticacao_digital = { t: `<b>📑 Autenticação de Documento Digital</b>\n\nAutenticação de documentos eletrônicos.`, o: [['🔙 Voltar', 'notas_autenticacao']] };
-states.notas_autenticacao_eletronica = { t: `<b>📑 Autenticação Eletrônica</b>\n\nAutenticação eletrônica de documentos (AED).`, o: [['🔙 Voltar', 'notas_autenticacao']] };
+states.notas_autenticacao_doc = { t: `<b>📑 Autenticação de Documento</b>\n\nConfere fé pública a documento particular.\n\nApresentar original e cópia.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_autenticacao_copia = { t: `<b>📑 Cópia Autenticada</b>\n\nConfere que a cópia é fiel ao original.\n\nApresentar original e cópia.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_autenticacao_digital = { t: `<b>📑 Autenticação de Documento Digital</b>\n\nAutenticação de documentos eletrônicos.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_autenticacao_eletronica = { t: `<b>📑 Autenticação Eletrônica</b>\n\nAutenticação eletrônica de documentos (AED).`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 
 states.notas_ata = {
   t: `<b>📜 ATA NOTARIAL</b>
@@ -585,13 +598,14 @@ Deseja saber:`,
     ['💲 Custas', 'notas_ata_custas'],
     ['📅 Agendar', 'agendar'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
-states.notas_ata_uso = { t: `<b>📜 Quando Utilizar Ata Notarial</b>\n\nA ata notarial é utilizada para constatar e documentar fatos jurídicos, como:\n\n• Conteúdo de sites e redes sociais\n• Mensagens de aplicativos\n• Existência de bens\n• Declarações de terceiros\n• Qualquer situação que precise de prova legal`, o: [['🔙 Voltar', 'notas_ata']] };
-states.notas_ata_docs = { t: `<b>📋 Documentos - Ata Notarial</b>\n\n• RG e CPF do solicitante\n• Descrição detalhada do fato a ser documentado\n• Endereço ou link (se aplicável)`, o: [['🔙 Voltar', 'notas_ata']] };
-states.notas_ata_prazo = { t: `<b>⏳ Prazo - Ata Notarial</b>\n\nA ata é lavrada no momento da solicitação. Prazo de entrega: 1 a 3 dias úteis.`, o: [['🔙 Voltar', 'notas_ata']] };
-states.notas_ata_custas = { t: `<b>💲 Custas - Ata Notarial</b>\n\nConsulte a tabela de emolumentos. O valor varia conforme a complexidade e quantidade de páginas.`, o: [['🔙 Voltar', 'notas_ata']] };
+states.notas_ata_uso = { t: `<b>📜 Quando Utilizar Ata Notarial</b>\n\nA ata notarial é utilizada para constatar e documentar fatos jurídicos, como:\n\n• Conteúdo de sites e redes sociais\n• Mensagens de aplicativos\n• Existência de bens\n• Declarações de terceiros\n• Qualquer situação que precise de prova legal`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_ata_docs = { t: `<b>📋 Documentos - Ata Notarial</b>\n\n• RG e CPF do solicitante\n• Descrição detalhada do fato a ser documentado\n• Endereço ou link (se aplicável)`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_ata_prazo = { t: `<b>⏳ Prazo - Ata Notarial</b>\n\nA ata é lavrada no momento da solicitação. Prazo de entrega: 1 a 3 dias úteis.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_ata_custas = { t: `<b>💲 Custas - Ata Notarial</b>\n\nConsulte a tabela de emolumentos. O valor varia conforme a complexidade e quantidade de páginas.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 
 states.notas_testamento = {
   t: `<b>📖 TESTAMENTO</b>
@@ -603,13 +617,14 @@ Escolha:`,
     ['Certidão', 'notas_testamento_certidao'],
     ['Informações', 'notas_testamento_info'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
-states.notas_testamento_publico = { t: `<b>📖 Testamento Público</b>\n\nTestamento lavrado em livro próprio, lido em voz alta pelo tabelião e assinado pelo testador e testemunhas.\n\nDocumentos: RG, CPF, certidão de casamento, relação de bens e herdeiros.\n\nPrazo: 5 a 10 dias úteis.`, o: [['🔙 Voltar', 'notas_testamento']] };
-states.notas_testamento_revogacao = { t: `<b>📖 Revogação de Testamento</b>\n\nRevogação total ou parcial do testamento anterior.\n\nO testador deve comparecer pessoalmente.`, o: [['🔙 Voltar', 'notas_testamento']] };
-states.notas_testamento_certidao = { t: `<b>📖 Certidão de Testamento</b>\n\nCertidão de existência ou inexistência de testamento.\n\nPode ser solicitada por herdeiros ou interessados.`, o: [['🔙 Voltar', 'notas_testamento']] };
-states.notas_testamento_info = { t: `<b>📖 Informações sobre Testamento</b>\n\nO testamento público é a forma mais segura e comum. O testador declara sua vontade perante o tabelião.\n\nCapacidade: maiores de 18 anos.\n\nTestemunhas: 2 a 3 pessoas.`, o: [['🔙 Voltar', 'notas_testamento']] };
+states.notas_testamento_publico = { t: `<b>📖 Testamento Público</b>\n\nTestamento lavrado em livro próprio, lido em voz alta pelo tabelião e assinado pelo testador e testemunhas.\n\nDocumentos: RG, CPF, certidão de casamento, relação de bens e herdeiros.\n\nPrazo: 5 a 10 dias úteis.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_testamento_revogacao = { t: `<b>📖 Revogação de Testamento</b>\n\nRevogação total ou parcial do testamento anterior.\n\nO testador deve comparecer pessoalmente.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_testamento_certidao = { t: `<b>📖 Certidão de Testamento</b>\n\nCertidão de existência ou inexistência de testamento.\n\nPode ser solicitada por herdeiros ou interessados.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_testamento_info = { t: `<b>📖 Informações sobre Testamento</b>\n\nO testamento público é a forma mais segura e comum. O testador declara sua vontade perante o tabelião.\n\nCapacidade: maiores de 18 anos.\n\nTestemunhas: 2 a 3 pessoas.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 
 states.notas_apostilamento = {
   t: `<b>🌍 APOSTILAMENTO DE HAIA</b>
@@ -621,17 +636,18 @@ Escolha:`,
     ['Certidão', 'notas_apostila_certidao'],
     ['Tradução', 'notas_apostila_traducao'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
-states.notas_apostila_br = { t: `<b>🌍 Apostilamento - Documento Brasileiro</b>\n\nApostilamento de documentos públicos brasileiros para uso no exterior (países signatários da Convenção de Haia).`, o: [['🔙 Voltar', 'notas_apostilamento']] };
-states.notas_apostila_diploma = { t: `<b>🌍 Apostilamento - Diploma</b>\n\nApostilamento de diplomas e certificados escolares para uso no exterior.`, o: [['🔙 Voltar', 'notas_apostilamento']] };
-states.notas_apostila_certidao = { t: `<b>🌍 Apostilamento - Certidão</b>\n\nApostilamento de certidões (nascimento, casamento, óbito) para uso no exterior.`, o: [['🔙 Voltar', 'notas_apostilamento']] };
-states.notas_apostila_traducao = { t: `<b>🌍 Apostilamento - Tradução</b>\n\nApostilamento de tradução juramentada.`, o: [['🔙 Voltar', 'notas_apostilamento']] };
+states.notas_apostila_br = { t: `<b>🌍 Apostilamento - Documento Brasileiro</b>\n\nApostilamento de documentos públicos brasileiros para uso no exterior (países signatários da Convenção de Haia).`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_apostila_diploma = { t: `<b>🌍 Apostilamento - Diploma</b>\n\nApostilamento de diplomas e certificados escolares para uso no exterior.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_apostila_certidao = { t: `<b>🌍 Apostilamento - Certidão</b>\n\nApostilamento de certidões (nascimento, casamento, óbito) para uso no exterior.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.notas_apostila_traducao = { t: `<b>🌍 Apostilamento - Tradução</b>\n\nApostilamento de tradução juramentada.`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 
 states.notas_certidoes = {
   t: `<b>📂 CERTIDÕES - TABELIONATO DE NOTAS</b>\n\nCertidões emitidas pelo tabelionato:\n\n• Certidão de escritura\n• Certidão de procuração\n• Certidão de testamento\n• Certidão de ata notarial\n\nPrazo: 3 a 5 dias úteis.`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.juridicas = {
@@ -652,11 +668,12 @@ Escolha:`,
     ['Certidões', 'jur_certidoes'],
     ['Busca', 'jur_busca'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
 function makeJurState(title, info) {
-  return { t: `<b>${title}</b>\n\n${info}`, o: [['🔙 Voltar', '__back__']] };
+  return { t: `<b>${title}</b>\n\n${info}`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 }
 
 states.jur_associacao = makeJurState('Associação', 'Registro de associação civil sem fins lucrativos.\n\nDocumentos: Estatuto, ata de fundação, CPF e RG dos fundadores.');
@@ -675,7 +692,7 @@ states.jur_busca = makeJurState('Busca', 'Busca de registro de pessoa jurídica.
 states.titulos = {
   t: `<b>📋 Registro de Títulos e Documentos</b>
 
-⚠️ <b>Importante:</b> Em Várzea Grande, o serviço de <b>Registro de Imóveis</b> (compra e venda, matrícula, hipoteca, averbações, usucapião) é de responsabilidade exclusiva do:
+⚠️ <b>Importante:</b> Em Várzea Grande, o serviço de <b>Registro de Imóveis</b> é de responsabilidade exclusiva do:
 
 <b>🏛 1º Ofício de Várzea Grande</b>
 👤 <b>Titular:</b> Antônia de Campos Maciel
@@ -685,12 +702,13 @@ states.titulos = {
 📧 <b>E-mail:</b> primeirooficio.vg@terra.com.br
 🕐 <b>Horário:</b> Segunda a Sexta, 09h às 17h`,
   o: [
-    ['🔙 Voltar ao Menu Principal', '__back__'],
+    ['⬅ Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
 function makeTitState(title, info) {
-  return { t: `<b>${title}</b>\n\n${info}`, o: [['🔙 Voltar', '__back__']] };
+  return { t: `<b>${title}</b>\n\n${info}`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 }
 
 states.tit_contratos = makeTitState('Registro de Contratos', 'Registro de contratos em geral para dar fé pública e data certa.');
@@ -721,11 +739,12 @@ Escolha:`,
     ['Retirada', 'prot_retirada'],
     ['Dúvidas', 'prot_duvidas'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
 function makeProtState(title, info) {
-  return { t: `<b>${title}</b>\n\n${info}`, o: [['🔙 Voltar', '__back__']] };
+  return { t: `<b>${title}</b>\n\n${info}`, o: [['⬅ Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 }
 
 states.prot_consulta = makeProtState('Consulta de Protesto', 'Consulte se seu nome ou CPF/CNPJ possui protesto.\n\nPode ser feita presencialmente ou online.');
@@ -751,6 +770,7 @@ Escolha:`,
     ['💰 Dinheiro', 'custas_dinheiro'],
     ['📝 Solicitar Orçamento', 'custas_orcamento'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -762,7 +782,7 @@ A tabela de emolumentos é atualizada anualmente pelo Tribunal de Justiça de Ma
 Consulte o site do TJMT ou solicite no balcão do cartório.
 
 <a href="https://www.tjmt.jus.br">www.tjmt.jus.br</a>`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.custas_pagamento = {
@@ -772,13 +792,13 @@ Aceitamos as seguintes formas de pagamento:
 • PIX
 • Cartão de Débito e Crédito
 • Dinheiro`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
-states.custas_pix = { t: `<b>PIX</b>\n\nPagamento via PIX na hora do atendimento.\n\nChave PIX: Consulte o cartório.`, o: [['🔙 Voltar', '__back__']] };
-states.custas_cartao = { t: `<b>💳 Cartão</b>\n\nAceitamos cartões de débito e crédito.\n\nConsulte as bandeiras aceitas no cartório.`, o: [['🔙 Voltar', '__back__']] };
-states.custas_dinheiro = { t: `<b>💰 Dinheiro</b>\n\nPagamento em espécie aceito.\n\nConsulte o troco disponível no momento do pagamento.`, o: [['🔙 Voltar', '__back__']] };
-states.custas_orcamento = { t: `<b>📝 Solicitar Orçamento</b>\n\nPara solicitar um orçamento personalizado, informe o serviço desejado e os detalhes do ato.\n\nEntre em contato conosco.`, o: [['👨‍💼 Falar com Atendente', 'atendente'], ['🔙 Voltar', '__back__']] };
+states.custas_pix = { t: `<b>PIX</b>\n\nPagamento via PIX na hora do atendimento.\n\nChave PIX: Consulte o cartório.`, o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.custas_cartao = { t: `<b>💳 Cartão</b>\n\nAceitamos cartões de débito e crédito.\n\nConsulte as bandeiras aceitas no cartório.`, o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.custas_dinheiro = { t: `<b>💰 Dinheiro</b>\n\nPagamento em espécie aceito.\n\nConsulte o troco disponível no momento do pagamento.`, o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
+states.custas_orcamento = { t: `<b>📝 Solicitar Orçamento</b>\n\nPara solicitar um orçamento personalizado, informe o serviço desejado e os detalhes do ato.\n\nEntre em contato conosco.`, o: [['👨‍💼 Falar com Atendente', 'atendente'], ['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']] };
 
 states.horario = {
   t: `<b>🕐 HORÁRIO DE ATENDIMENTO</b>
@@ -788,7 +808,7 @@ states.horario = {
 
 <b>Plantão:</b>
 Aos sábados, domingos e feriados, mediante agendamento para casos urgentes (registro de óbito, etc.).`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.endereco = {
@@ -802,6 +822,7 @@ Deseja:`,
     ['📧 E-mail', 'end_email'],
     ['🌐 Site', 'end_site'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -813,7 +834,7 @@ states.end_localizacao = {
 Endereço: Rua Governador Ponce de Arruda, nº 500, Centro
 Várzea Grande - MT
 CEP: 78110-000`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.end_como_chegar = {
@@ -827,7 +848,7 @@ O cartório está localizado no centro de Várzea Grande, próximo à Praça dos
 • Fácil acesso por transporte público (linhas Centro)
 
 Utilize aplicativos de GPS: "Rua Gov. Ponce de Arruda, 500 - Centro, Várzea Grande"`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.end_telefones = {
@@ -839,7 +860,7 @@ states.end_telefones = {
 📞 (65) 3688-5001 - Registro Civil
 📞 (65) 3688-5002 - Protesto
 📞 (65) 3688-5003 - Pessoas Jurídicas`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.end_email = {
@@ -849,7 +870,7 @@ Registro Civil: civil@cartoriovg.com.br
 Tabelionato: tabelionato@cartoriovg.com.br
 Protesto: protesto@cartoriovg.com.br
 Jurídicas: juridicas@cartoriovg.com.br`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.end_site = {
@@ -859,7 +880,7 @@ Acesse nosso site:
 <a href="https://www.cartoriovg.com.br">www.cartoriovg.com.br</a>
 
 Siga-nos nas redes sociais para novidades e avisos.`,
-  o: [['🔙 Voltar', '__back__']]
+  o: [['🔙 Voltar', '__back__'], ['🏠 Menu Principal', 'main']]
 };
 
 states.atendente = {
@@ -876,6 +897,7 @@ Digite seus dados abaixo para iniciar o atendimento.`,
   o: [
     ['✏ Informar dados', 'atendente_form'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -891,6 +913,7 @@ Por favor, digite seus dados na seguinte ordem:
   o: [
     ['✅ Já enviei', 'atendente_enviar'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -921,6 +944,7 @@ Entre em contato conosco para verificar a disponibilidade.`,
   o: [
     ['👨‍💼 Falar com Atendente', 'atendente'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
@@ -936,6 +960,7 @@ Informe seu nome e o serviço desejado no envio.`,
   o: [
     ['👨‍💼 Falar com Atendente', 'atendente'],
     ['🔙 Voltar', '__back__'],
+    ['🏠 Menu Principal', 'main'],
   ]
 };
 
