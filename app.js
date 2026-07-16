@@ -675,6 +675,14 @@ states.jur_busca = makeJurState('Busca', 'Busca de registro de pessoa jurídica.
 states.titulos = {
   t: `<b>REGISTRO DE TÍTULOS E DOCUMENTOS</b>
 
+⚠️ <b>Atenção:</b> Em Várzea Grande, o serviço de <b>Registro de Imóveis</b> (compra, venda, matrícula, hipoteca de imóveis) é de responsabilidade do <b>1º Ofício de Várzea Grande</b>.
+
+📍 <b>Endereço:</b> Travessa Aquidaban, 38 - Centro, Várzea Grande - MT
+📞 <b>Telefone:</b> (65) 3682-6660 / 3682-6661
+🕐 <b>Horário:</b> Segunda a Sexta, 09h às 17h
+
+Abaixo, os serviços de <b>Títulos e Documentos</b> deste cartório:
+
 Escolha:`,
   o: [
     ['Registro de Contratos', 'tit_contratos'],
