@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#075E54">
+  <meta name="description" content="Cartório 2º Ofício de Várzea Grande/MT - Atendimento virtual">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Cartório 2º Ofício - Várzea Grande/MT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-content">
+        <div class="avatar">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <rect width="40" height="40" rx="20" fill="#128C7E"/>
+            <text x="20" y="26" text-anchor="middle" fill="white" font-size="20" font-family="sans-serif" font-weight="bold">C</text>
+          </svg>
+        </div>
+        <div class="header-info">
+          <h1>Cartório 2º Ofício de Várzea Grande/MT</h1>
+          <span class="status">online</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="chat"></main>
+
+    <footer>
+      <form id="form">
+        <input type="text" id="input" placeholder="Digite o número da opção ou descreva o serviço..." autocomplete="off" required>
+        <button type="submit" id="sendBtn" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"/></svg>
+        </button>
+      </form>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
