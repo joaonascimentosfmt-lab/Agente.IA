@@ -995,6 +995,7 @@ function formatTime(date) {
 let currentState = 'main';
 let stateHistory = [];
 let atendenteData = { step: 0, nome: '', cpf: '', telefone: '', assunto: '' };
+let conversationStarted = false;
 
 function addMessage(content, type) {
   const div = document.createElement('div');
@@ -1114,6 +1115,13 @@ async function handleUserMessage(text) {
 
   hideTyping();
 
+  if (!conversationStarted) {
+    conversationStarted = true;
+    renderState('main');
+    sendBtn.disabled = false;
+    return;
+  }
+
   if (currentState === 'atendente_form') {
     atendenteData.step++;
     if (atendenteData.step <= 4) {
@@ -1184,5 +1192,3 @@ form.addEventListener('submit', (e) => {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
-
-renderState('main');
